@@ -1,0 +1,353 @@
+h1 {
+    margin-top: -10px;
+    color: #f1f1f1;
+    text-align: center;
+    padding-left: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 10px;
+}
+
+.navbar {
+    background-color: #333;
+	position: sticky;
+    overflow: hidden;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    padding: 14px 20px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+}
+
+.navbar li a:hover {
+    background-color: #575757;
+}
+
+.search input {
+    padding: 5px;
+    font-size: 16px;
+    margin-top: 7px;
+    width: 200px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.event-card {
+    display: flex;
+    flex-direction: row; /* จัดให้อยู่แนวนอน */
+    background-color: #222; /* พื้นหลังของการ์ด */
+    border-radius: 10px; /* ขอบมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* เงา */
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden; /* ซ่อนส่วนที่เกิน */
+}
+
+/* ส่วนภาพ */
+.event-image {
+    flex: 1; /* กำหนดให้ภาพใช้พื้นที่ */
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px; /* มุมโค้งซ้าย */
+}
+
+/* ส่วนรายละเอียด */
+.event-details {
+    flex: 2; /* พื้นที่ส่วนข้อความ */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event-details h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.event-info {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.event-info li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.event-info .icon {
+    margin-right: 10px;
+}
+
+/* ปุ่มซื้อ */
+.buy-now {
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: flex-start; /* จัดปุ่มให้อยู่ซ้าย */
+}
+
+.buy-now:hover {
+    background-color: #0088cc;
+}
+
+
+/* Booking Section */
+.booking-section h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[readonly] {
+    background-color: #f9f9f9;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.back-button, .booking-button {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.back-button {
+    background-color: #ddd;
+    color: #333;
+}
+
+.booking-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.booking-button:hover {
+    background-color: #0056b3;
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #fff;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.header .logo span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navigation ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation ul li {
+    margin: 0 10px;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.language-switcher img {
+    width: 20px;
+    margin: 0 5px;
+}
+
+.user-info {
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #444;
+}
+
+.event-card {
+    display: flex;
+    background-color: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event-image img {
+    width: 500px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.event-details h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.event-info h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.event-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.event-info li {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.event-info li .icon {
+    margin-right: 10px;
+}
+
+.buy-now {
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buy-now:hover {
+    background-color: #0097a7;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer .footer a {
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.footer .footer a:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}

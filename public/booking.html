@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Art</title>
+    <link type="text/css" rel="stylesheet" href="css/stylebook.css">
+    <script src="js/booking.js" defer></script> <!-- ใช้ defer เพื่อให้ JavaScript โหลดหลังจาก HTML โหลดเสร็จ -->
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="/index.html">Event Art</a></li>
+            <li><a href="/Profile.html">Profile</a></li>
+            <li><a href="/feed.html">Home</a></li>
+            <li><a href="/exhibition.html">Exhibition</a></li>
+            <li><a href="/Contact.html">Contact</a></li>
+            <li class="search">
+                <input type="text" placeholder="Search...">
+            </li>
+            <li><a href="/index.html">Logout</a></li>
+        </ul>
+    </nav>
+    <main class="main-content">
+        <div class="event-card">
+            <div class="event-image">
+                <img id="eventImage" src="" alt="Event Image">
+            </div>
+            <div class="event-details">
+                <h2 id="eventName">Event Name</h2>
+                <ul class="event-info">
+                    <li><span class="icon">📅</span><span id="eventDate">Event Date</span></li>
+                    <li><span class="icon">📍</span><span id="eventLocation">Event Location</span></li>
+                    <li><span class="icon">💵</span><span id="eventPrice">Event Price</span></li>
+                </ul>
+                <button class="buy-now" onclick="showBookingForm()">BUY NOW</button>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Form to book tickets (Initially hidden) -->
+    <div class="booking-section" style="display: none;">
+        <h2>Ticket Information</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="round">Round:</label>
+                <select id="round" name="round">
+                    <option value="2-day-pass">2 Day Pass: 30 November - 1 December 2024</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zone">Zone:</label>
+                <input type="text" id="zone" name="zone" value="FINAL CALL" readonly>
+            </div>
+            <div class="form-group">
+                <label for="seat">Seat No:</label>
+                <input type="text" id="seat" name="seat" value="Festival" readonly>
+            </div>
+            <div class="form-group">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" value="1" min="1">
+            </div>
+            <div class="form-group">
+                <label for="unit-price">Unit Price (Baht):</label>
+                <input type="text" id="unit-price" name="unit-price" value="1,600" readonly>
+            </div>
+            <div class="form-group">
+                <label for="total-price">Total Price (Baht):</label>
+                <input type="text" id="total-price" name="total-price" value="1,600" readonly>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="consent" name="consent">
+                <label for="consent">
+                    I consent to allow Counter Service Co., Ltd. to provide my ID card number and mobile number to the concert promoter for verification purposes.
+                </label>
+            </div>
+            <div class="form-actions">
+                <button type="button" class="back-button" onclick="hideCreateEventForm()">Cancel</button>
+                <button type="submit" class="booking-button">Booking</button>
+            </div>
+        </form>
+    </div>    
+    <footer class="footer">
+                &copy; <script>document.write(new Date().getFullYear())</script> Event Art 
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
